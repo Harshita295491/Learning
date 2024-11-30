@@ -1,0 +1,58 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-calendar__tile.highlight-event::after,
+.react-calendar__tile.highlight-absent::after,
+.react-calendar__tile.highlight-missingclockout::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.react-calendar__tile.highlight-event::after {
+  background-color: skyblue; /* Color for events */
+}
+
+.react-calendar__tile.highlight-absent::after {
+  background-color: red; /* Color for absents */
+}
+
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.react-calendar__tile.highlight-present::after,
+.react-calendar__tile.highlight-holiday::after,
+.react-calendar__tile.highlight-absent::after,
+.react-calendar__tile.highlight-missingclockout::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.react-calendar__tile.highlight-holiday::after {
+  background-color: blue; /* Color for events */
+}
+
+.react-calendar__tile.highlight-absent::after {
+  background-color: red; /* Color for absents */
+}
+
+.react-calendar__tile.highlight-missingclockout::after {
+  background-color: rgb(104, 56, 56); /* Color for missing clockout */
+}
+.react-calendar__tile.highlight-present::after {
+  background-color: green; /* Color for missing clockout */
+}
+.fixed { transition: transform 0.3s ease-in-out; }
+/* Add this to your CSS file */
+
+

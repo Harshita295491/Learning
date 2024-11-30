@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.highlight{
+  font-weight: 900;
+  background-color: yellow;
+}
+
+
+
+
